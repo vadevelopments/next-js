@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { IconButton, InputAdornment, FormControl, InputLabel, OutlinedInput } from '@mui/material';
-import { Visibility, VisibilityOff } from '@mui/icons-material';
+import { Style, Visibility, VisibilityOff } from '@mui/icons-material';
 import { BarChart } from '@mui/x-charts/BarChart';
 import { useYScale, ResponsiveChartContainer, BarPlot, ChartsXAxis, ChartsYAxis, ChartsReferenceLine, ChartsTooltip } from '@mui/x-charts';
 
@@ -113,7 +113,7 @@ const Home = () => {
         <BarPlot slots={{bar: SlotBarElement}}/>
         <ChartsXAxis/>
         <ChartsYAxis axisId="left_axis_id" position="left" />
-        <ChartsReferenceLine label={'8'} labelAlign="end" y={8} zIndex={2} lineStyle={'dotted'} />
+        <ChartsReferenceLine label={'8'} labelAlign="end" y={8} zIndex={2}  />
         <ChartsReferenceLine label={'6'} labelAlign="end" y={6} zIndex={-2}/>
         <ChartsTooltip/>
       </ResponsiveChartContainer>
